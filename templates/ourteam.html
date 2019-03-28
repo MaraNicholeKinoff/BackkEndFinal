@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Our Team</title>
+{% endblock %}
+{% load staticfiles %}
+{% block content %}
+<!-- <h4 class="bg-dark text-light rounded m-2 p-4">Our Team</h4> -->
+<div class="row" style="margin-top: 20px ">
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+
+        <div class="card" style="height: 100%">
+            <div class="card-body">
+                <img class="card-img-top" src="{% static 'img/Emp1.jpg' %}" alt="Card image">
+                <div class="card-img-title">
+                    <h4 class="card-title">Vanessa Valenzuela</h4>
+                    <p class="card-text">Our most recent employee of the month, Vanessa is one of our most valuable
+                        workers.
+                        When
+                        she isn't at Beans and Bars, she is training rats that star in Hollywood movies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card" style="height: 100%">
+            <div class="card-body">
+                <img class="card-img-top" src="{% static 'img/Emp4.jpg' %}" alt="Card image">
+                <div class="card-img-title">
+                    <h4 class="card-title">Seth Paulk</h4>
+                    <p class="card-text">Seth has been in the coffee business for ten years now. He is also our
+                        consultant
+                        on
+                        where
+                        to buy the best coffee beans in order to give our customers the best.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card" style="height: 100%">
+            <div class="card-body">
+                <img class="card-img-top" src="{% static 'img/Emp3.jpg' %}" alt="Card image">
+                <div class="card-img-title">
+                    <h4 class="card-title">Elani Nichelle</h4>
+                    <p class="card-text">Elani is our newest team member and she is a customer service expert. She is
+                        always
+                        making
+                        our customers' days just a little bit brighter.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin-top: 20px">
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+        <div class="card" style="height: 100%">
+            <div class="card-body">
+                <img class="card-img-top" src="{% static 'img/Emp5.jpg' %}" alt="Card image">
+                <div class="card-img-title">
+                    <h4 class="card-title">Ross Harrington</h4>
+                    <p class="card-text">Ross not only has been making coffee since he was ten, but he also gives
+                        us
+                        incredible
+                        insight on local musicians. Almost half of our musicians come from his recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card" style="height: 100%">
+            <div class="card-body">
+                <img class="card-img-top" src="{% static 'img/Emp2.jpg' %}" alt=" Card image">
+                <div class="card-img-title">
+                    <h4 class="card-title">Amy Sayso</h4>
+                    <p class="card-text">my has been with Beans and Bars since the beginning and she is our front
+                        of house
+                        manager
+                        and can make a wicked latte. She also works as a fashion consultant in her free time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card" style="height: 100%">
+            <div class="card-body">
+                <img class="card-img-top" src="{% static 'img/Emp6.jpg' %}" alt="Card image">
+                <div class="card-img-title">
+                    <h4 class="card-title">Joseph Moher</h4>
+                    <p class="card-text">Joseph works for us part time as one of the best mocha makers in the
+                        Panhandle and
+                        part
+                        time as our on call musician if a band ever falls through.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- end of row 3 -->
+{% endblock %}

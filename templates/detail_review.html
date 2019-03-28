@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+<title>Music Reviews</title>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <!-- Reviews -->
+        <div class="post-entry m-2">
+            <ul class="list-group">
+                <li class="list-group-item bg-dark text-light">
+                    <h4>{{ mrpost.title }}</h2>
+                </li>
+                <li class="list-group-item">
+                    <p>{{ mrpost.body }}</p>
+                </li>
+            </ul>
+            <a href="{% url 'new_review' %}"><button class="btn btn-dark">Post a Review</button></a>
+            <a href="{% url 'home' %}"><button class="btn btn-dark float-right">Home Page</button></a>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+{% endblock %}

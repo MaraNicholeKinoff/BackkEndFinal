@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+<title>Music Reviews</title>
+{% endblock %}
+
+{% block content %}
+<!-- <h4 class="bg-dark text-light rounded m-2 p-4">Music Reviews</h4> -->
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 m-2 p-4">
+        {% for mrPost in object_list %}
+        <div class="post-entry m-2">
+            <ul class="list-group">
+                <li class="list-group-item bg-dark text-light">
+                    <h4>{{ mrPost.title }}</h2>
+                </li>
+                <li class="list-group-item">
+                    <p>{{ mrPost.body }}</p>
+                </li>
+            </ul>
+        </div>
+        {% endfor %}
+        <!-- link to music review form input -->
+        <a href="{% url 'new_review' %}"><button class="btn btn-dark float-right">Post a Review</button></a>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+{% endblock %}
